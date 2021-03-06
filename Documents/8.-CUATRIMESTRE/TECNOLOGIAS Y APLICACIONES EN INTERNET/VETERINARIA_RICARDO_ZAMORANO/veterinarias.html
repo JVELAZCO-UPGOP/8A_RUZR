@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="/css/styles.css">
 
-    <title>Dueños de Mascotas</title>
+    <title>Veterinaria</title>
 </head>
 <body>
     <div class="container">
@@ -33,19 +33,19 @@
             <a class="nav-link" href="/consultas.html">Consultas</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/duenos.html">Dueño</a>
+            <a class="nav-link" href="/duenos.html">Dueños</a>
             </li>
         </ul>
         <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
         </div>
     </nav>
     <div class="actions-menu">
-    <h1>Dueño de la Mascota</h1>
+    <h1>Veterinari@s</h1>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            Nuevo dueño
+            Nuevo vete
         </button>
     </div>
         <table class="table table-hover" >
@@ -53,24 +53,23 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Identificacion</th>
-                <th scope="col">Pais</th>
+                <th scope="col">País</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Apellido</th>
                 <th scope="col"></th>
             </tr>
             </thead>
-            <tbody id="lista-duenos">
+            <tbody id="lista-veterinarios">
         
             </tbody>
         </table>
     </div>
-  
-
+    <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Nuevo Dueño</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Nuevo Veteinario</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -81,10 +80,10 @@
                 <div class="form-row">
                 <div class="col">
                     <select class="form-control" id="pais">
-                    <option>Pais</option>
-                    <option>Mexico</option>
+                    <option>País</option>
+                    <option>México</option>
+                    <option>Canadá</option>
                     <option>Colombia</option>
-                    <option>Argentina</option>
                     <option>Estados Unidos</option>
                     <option>Otro</option>
                     </select>
@@ -114,12 +113,11 @@
     </div>
     </div>
 </div>
-
-
+  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
-    <script src="/js/duenos.js"></script>
+    <script src="/js/veterinarias.js"></script>
 </body>
 </html>
