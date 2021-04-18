@@ -1,4 +1,3 @@
-
 const listaVeterinarios=document.getElementById('lista-veterinarios');
 const pais=document.getElementById('pais');
 const identificacion=document.getElementById('identificacion');
@@ -15,13 +14,13 @@ let veterinarios=[
         nombre: "Ricardo",
         apellido: "Zamorano",
         pais: "Mexico",
-        identificacion: "8711184563"
+        identificacion: "18070390"
     },
     {
-        nombre: "Luis",
-        apellido: "Avila",
+        nombre: "Paco",
+        apellido: "Lopez",
         pais: "Colombia",
-        identificacion: "8723968763"
+        identificacion: "32147896"
     }
 ];
 
@@ -56,11 +55,11 @@ function enviarDatos(evento) {
     const accion = btnGuardar.innerHTML;
     switch(accion){
         case 'Editar':
-            
+            //Editar
             veterinarios[indice.value] = datos;
             break;
             default:
-         
+                //crear
                 veterinarios.push(datos);
                 break;
     }

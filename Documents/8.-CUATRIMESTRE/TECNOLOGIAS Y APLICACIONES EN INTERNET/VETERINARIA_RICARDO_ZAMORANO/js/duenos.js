@@ -11,16 +11,16 @@ const btnGuardar=document.getElementById('btn-guardar');
 let duenos=[
     {
         
-        nombre: "Paco",
-        apellido: "Ruiz",
-        pais: "Estados Unidos",
-        identificacion: "8723965216"
+        nombre: "Jhon",
+        apellido: "Garcia",
+        pais: "Canadá",
+        identificacion: "18070280"
     },
     {
-        nombre: "Ricardo",
-        apellido: "Zamorano",
-        pais: "México",
-        identificacion: "8763958476"
+        nombre: "Alicia",
+        apellido: "Mendez",
+        pais: "Colombia",
+        identificacion: "74123698"
     }
 ];
 
@@ -55,11 +55,11 @@ function enviarDatos(evento) {
     const accion = btnGuardar.innerHTML;
     switch(accion){
         case 'Editar':
-            
+            //Editar
             duenos[indice.value] = datos;
             break;
             default:
-                
+                //crear
                 duenos.push(datos);
                 break;
     }
